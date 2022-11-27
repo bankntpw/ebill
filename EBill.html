@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Electricity Bill</title>
+	
+	<style>
+	.d
+	{
+	border-style:solid;
+	padding-top:40px;
+	padding-bottom:40px;
+	border-radius:20px;
+	width:550px;
+	font-size:20px;
+	border-width:5px;
+	background-image:linear-gradient(MediumAquaMarine,MediumSeaGreen);
+	box-shadow:5px 10px;
+	}
+	
+	input
+	{
+	background-color;transparent;
+	border:0px solid;
+	height:25px;
+	}
+	</style>	
+</head>
+
+<body style="background-color:DarkKhaki;">
+
+<center>
+	<h1 style="font-size:90px;font-family:FZShuTi;text-shadow:3px 3px gray;">Domestic Electricity Bill Calculator</h1>
+</center>
+
+<br>
+
+<center>
+	<div class="d">
+		<form>
+		<label><b> No of Units Used : </b></label>
+		<input type="number" name="units" min=0 id="input">
+		<label><b>kWh</b></label>
+
+		<br><br><br>
+
+		<button type="reset" name="clear" value="Clear" style="margin-left:220px;font-size:15px;"id="cl"><b>Clear</b></button>
+		<br><br><br>
+
+		<button type="button" name="cal" value="Calculate" style="margin-left:136px;font-size:15px;" id="calculate" onclick="calculateBill()" ><b>Calculate my bill</b></button>
+		<script src="script.js"></script>
+		<br><br><br>
+
+		<p style="margin-left:23px;"><b>Your Bill Amount is :</b><span id="cal"></span>
+		<b>Rs</b>
+		</p>
+		</form>
+	</div>
+	
+	
+	<br><br>
+	
+	<table>
+		<tr>
+			<td><a href="https://roar.media/english/life/reports/electricity-bill-calculated-analysis" style="margin-right:350px;">More information on how my bill is <br>calculated</a></td>
+			<td><a href="https://ceb.lk/">Go to CEB web site</a></td>
+		</tr>
+	</table>
+		
+	<h4><i>Created by : Morin Sachinthana</i></h4>
+	
+</center>
+<script src="script.js"></script>
+</body>
+</html>
